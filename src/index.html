@@ -20,27 +20,34 @@
 
 
     <!--SIGUIENTE FRAME que no se quiere sobreponer sobre el de arriba-->
-    <div class="FrameDeIngresoDeDatos w-full  py-14 items-center inline-flex bg-white ">
-        <section class="Grouptodoslosdatos w-full h-96 px-5 py-0 bg-slate-500  flex justify-center relative ">
-            <!-- Con este frame hacemos que sea responsive-->
-
+    <div class="FrameDeIngresoDeDatos w-full  py-14   bg-white block ">
+        <div class="w-full h-10 px-5 py-0  flex justify-center relative">
             <div class="Framedecorativohc w-80 h-10 py-2 bg-blue-900 bg-opacity-80 rounded-3xl absolute flex justify-center items-center
               sm:w-5/6 sm:px-5 sm:h-12">
-                <span class="text-white sm:text-xl font-family-Poppins font-normal">Historial Clínico</span>
+                <span class="text-white sm:text-xl font-family-Poppins">Historial Clínico</span>
             </div>
-            <div class="SubirFoto w-48 h-16  relative"> </div>
-                <img class="FrameFoto w-28 h-28 sm:w-56 sm:h-56 left-[10%] top-[60px]  rounded-3xl absolute" src="../img/frameFoto.png" />
+
+        </div>
+        <section class="Grouptodoslosdatos w-full h-96 px-12 sm:px-36 py-0 bg-red-500  flex justify-start relative ">
+
+            <div class="FrameDelaImagen w-full sm:w-60  bg-green-400">
+                <img class="FrameFoto w-28 h-28 sm:w-56 sm:h-56 left-[10%] top-[60px]   sm:ml-12 rounded-3xl absolute"
+                    src="../img/frameFoto.png" />
                 <div class="btnSubirFoto w-28 h-8 bg-blue-950 bg-opacity-90 rounded-full shadow-sm left-[10%] top-[48%] absolute
                     sm:top-[78%] sm:left-[15%] sm:w-28 sm:h-10 ">
-                    <div class="textoFoto left-[18%] top-[30%] absolute text-white text-xs font-normal font-family-Poppins">
-                    Adjuntar Foto
+                    <div
+                        class="textoFoto left-[18%] top-[30%] absolute text-white text-xs font-light font-family-Poppins">
+                        Adjuntar Foto
                     </div>
                 </div>
-             
             </div>
-    </div>
+            <div class="Framedatos w-full h-96  sm:ml-32 relative bg-black">
+            </div>
+          
 
-    </section>
+
+
+        </section>
     </div>
 
 
