@@ -28,7 +28,7 @@
             </div>
 
         </div>
-        <section class="Group3DatosFoto w-full h-64 sm:h-96 px-10 sm:px-36 py-0  flex justify-start relative">
+        <section class="Group3DatosFoto w-full h-64 sm:h-96 px-44 sm:px-36 py-0  flex justify-start relative ">
 
             <div class="FrameDelaImagen w-full sm:w-60  ">
                 <img class="FrameFoto w-28 h-28 sm:w-56 sm:h-56 left-[10%] top-[60px]   sm:ml-24 rounded-3xl absolute "
@@ -70,7 +70,7 @@
             </div>
         </section>
 
-        <div class="Framedecorativohc  ml-24 sm:ml-32 w-60  h-10 py-2 bg-blue-900 bg-opacity-80 rounded-3xl relative flex justify-center items-center
+        <div class="Framedecorativohc  ml-10 sm:ml-32 w-60  h-10 py-2 bg-blue-900 bg-opacity-80 rounded-3xl relative flex justify-center items-center
         sm:w-5/6  sm:h-12 mb-4">
             <span class="text-white sm:text-xl font-family-Poppins">Datos de Nacimiento</span>
         </div>
@@ -95,7 +95,7 @@
                     Edad del paciente:
                 </div>
                 <div
-                    class="EdadCalculada w-60 h-6  text-black text-left text-base font-normal font-family-Poppins leading-tight mt-3 sm:ml-3  px-8">
+                    class="EdadCalculada w-60 h-6  text-black text-left text-base font-normal font-family-Poppins leading-tight mt-3 sm:ml-3  px-8 mb-3">
                     x dias y mese z horas
                 </div>
             </div>
@@ -105,13 +105,13 @@
         <div class="LineaDivisoria w-full h-30 bg-gray-900  "></div>
         <!-- Mostramos el siguiente bloque de información -->
         <div class="LugNacimiento w-56 h-6 text-center  text-black  font-family-Poppinsleading text-sm sm:w-80  sm:ml-36
-            font-semibold sm:text-lg sm:mb- mt-4">Lugar de Nacimiento</div>
+            font-semibold sm:text-lg sm:mb- mt-6">Lugar de Nacimiento</div>
         <section class="GroupLugNacimiento h-84 sm:left-[10%] relative sm:pt-0 ">
             <div class="flex  flex-col px-12  sm:px-0 sm:flex-row items-centersm:px-20 sm:pt-0">
                 <!-- Espacio para que escriba su fecha de cumpleaños -->
                 <form class="sm:px-20 w-52  sm:w-96 h-16 pt-3 sm:pt-0">
                     <div class=" grid  ">
-                        <select class="block w-full mt-2">
+                        <select name="pais" class="block w-full mt-2">
                             <option>Selecciona el país </option>
                             <option>Ecuador</option>
                             <option>Colombia</option>
@@ -122,7 +122,7 @@
                 </form>
                 <form class="sm:px-20 w-52  sm:w-96 h-16 pt-3 sm:pt-0">
                     <div class=" grid  ">
-                        <select class="block w-full mt-2">
+                        <select name="ciudad"  class="block w-full mt-2">
                             <option>Selecciona la ciudad </option>
                             <option>Cuenca </option>
                             <option>Ambato</option>
@@ -141,38 +141,44 @@
 
     <!-- APARTADO DE TABLA CON HIJOS RGISTRADOS-->
 
-    <div class="FrameHijos w-full h-96 relative bg-blue-900 bg-opacity-90 rounded-3xl">
-        <div class="flex items-center justify-center mb-5">
-            <a class="font-semibold font-family-Poppins text-white text-2xl">HIJOS REGISTRADOS</a>
+    <div class="FrameHijos w-full h-96 relative bg-blue-900 bg-opacity-80 rounded-3xl mb-8 ">
+        <div class="flex  items-center justify-center mb-5 h-12 ">
+            <a class="font-semibold font-family-Poppins text-white text-xl ">Hijos Registrados</a>
         </div>
-        <section class="flex items-center justify-center text-xs sm:text-lg ">
-            <div class="FrameTabla bg-white rounded-lg shadow-md w-1/3">
-                <table class="table-auto w-full">
+        <section class="flex items-center justify-center text-xs sm:text-lg flex-col sm:flex-row bg-gray-500">
+            <div class="FrameTabla rounded-lg shadow-md w-1/3 bg-white mb-5 border border-black">
+                <table class="table-auto w-full mr-5 ">
                     <thead>
-                        <tr class="bg-gray-200">
-                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg">Type</th>
+                        <tr class="bg-gray-500">
+                            <th class="sm:px-5  px-2 py-2 border-b-2 text-xs sm:text-lg">Type</th>
                             <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg">Where</th>
                             <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg ">Description</th>
-                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg ">Amount</th>
+                            <th class="sm:px-5  px-2 py-2 border-b-2 text-xs sm:text-lg ">Amount</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">1</td>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Cy Ganderton</td>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Quality Control Specialist</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Cy Ganderton
+                            </td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Quality
+                                Control Specialist</td>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Blue</td>
                         </tr>
                         <tr>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">2</td>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Hart Hagerty</td>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Desktop Support Technician</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Hart Hagerty
+                            </td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Desktop
+                                Support Technician</td>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Purple</td>
                         </tr>
                         <tr>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">3</td>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Brice Swyre</td>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Tax Accountant</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Brice Swyre
+                            </td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Tax
+                                Accountant</td>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Red</td>
                         </tr>
                         <!-- Filas vacías -->
@@ -183,7 +189,7 @@
                             <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
                         </tr>
                         <tr>
-                            <td  class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
                             <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
                             <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
                             <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
@@ -197,10 +203,80 @@
                     </tbody>
                 </table>
             </div>
+            <div class="flex items-center w-60 ml-5 flex-row ">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-family-Poppins text-xs sm:text-base px-4 py-2 rounded-lg  ">Agregar Fila</button>
+                    <button class="ml-4 bg-red-500 hover:bg-red-600 text-white font-semibold font-family-Poppins text-xs sm:text-base px-4 py-2 rounded-lg">Eliminar Fila</button>
+            </div>
         </section>
 
     </div>
 
+    <section class="FrameConsultasRegistradas w-full h-96 relative bg-white">
+        <div class="Framedecorativohc  ml-10 sm:ml-32 w-60  h-10 py-2 bg-blue-900 bg-opacity-80 rounded-3xl relative flex justify-center items-center
+        sm:w-5/6  sm:h-12 mb-4">
+            <span class="text-white sm:text-xl font-family-Poppins">Consultas Registradas</span>
+        </div>
+        <!--Vamos a hacer una tabla nuevamente con la diferencia de que los campos serán: Especialidad Doctor Fecha Hora-->
+        <!--El background de las cabeceras sera gris  y tendrá un footer -->
+        <section class="flex items-center justify-center text-xs sm:text-lg flex-col sm:flex-row bg-gray-500 ">
+            <div class="FrameTablaConsultas rounded-lg shadow-md w-1/3 bg-white mb-5 border border-gray-200">
+                <table class="table-auto w-full mr-5">
+                    <thead>
+                        <tr class="">
+                            <th class="sm:px-5  px-2 py-2 border-b-2 text-xs sm:text-lg ">Especialidad</th>
+                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg">Doctor</th>
+                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg ">Fecha</th>
+                            <th class="sm:px-5  px-2 py-2 border-b-2 text-xs sm:text-lg ">Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Pediatría</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Dr. Juan Perez</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">12/12/2021</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">10:00</td>
+                        </tr>
+                        <tr>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Ginecología</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Dra. Maria Perez</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">12/12/2021</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">10:00</td>
+                        </tr>
+                        <tr>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Psicologo</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Dr. Juan Ruiz</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">12/10/2022</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">20:00</td>
+                        </tr>
+                        <!-- Filas vacías -->
+                        <tr>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Pediatría</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Dr. Juan Perez</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">12/12/2023</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">9:00</td>
+                        </tr>
+                        <tr>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Ginecología</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Dra. Maria Perez</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">12/12/2024</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">11:00</td>
+                        </tr>
+                        <!-- FOOTER DE LA TABLA-->
+                        <tr>
+                            <td class="px-2 py-4 bg-gray-50" colspan="3">Total de consultas: 5</td> <!-- Celda con el texto "Total de consultas: 3" -->
+                            <td class="py-4 bg-gray-50 text-right">
+                                <button class="px-6  hover:bg-blue-700  font-bold font-family-Poppins text-xs sm:w-10 sm:h-10  py-2 rounded-lg">
+                                    <img src="../img/flecha-derecha.png" alt="Descripción de la imagen" class="w-5 h-5 mr-2" />
+                                    
+                                </button> <!-- Botón "Avanzar" -->
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
 
 </body>
 
