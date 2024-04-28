@@ -28,30 +28,182 @@
             </div>
 
         </div>
-        <section class="Grouptodoslosdatos w-full h-96 px-12 sm:px-36 py-0 bg-red-500  flex justify-start relative ">
+        <section class="Group3DatosFoto w-full h-64 sm:h-96 px-10 sm:px-36 py-0  flex justify-start relative">
 
-            <div class="FrameDelaImagen w-full sm:w-60  bg-green-400">
-                <img class="FrameFoto w-28 h-28 sm:w-56 sm:h-56 left-[10%] top-[60px]   sm:ml-12 rounded-3xl absolute"
+            <div class="FrameDelaImagen w-full sm:w-60  ">
+                <img class="FrameFoto w-28 h-28 sm:w-56 sm:h-56 left-[10%] top-[60px]   sm:ml-24 rounded-3xl absolute "
                     src="../img/frameFoto.png" />
-                <div class="btnSubirFoto w-28 h-8 bg-blue-950 bg-opacity-90 rounded-full shadow-sm left-[10%] top-[48%] absolute
-                    sm:top-[78%] sm:left-[15%] sm:w-28 sm:h-10 ">
-                    <div
+                <div class="btnSubirFoto w-28 h-8 bg-blue-950 bg-opacity-90 rounded-full shadow-sm left-[10%] top-[68%] absolute
+                    sm:top-[78%] sm:ml-24 sm:w-28 sm:h-10 ">
+                    <button
                         class="textoFoto left-[18%] top-[30%] absolute text-white text-xs font-light font-family-Poppins">
                         Adjuntar Foto
-                    </div>
+                    </button>
                 </div>
             </div>
-            <div class="Framedatos w-full h-96  sm:ml-32 relative bg-black">
+            <div class="Framedatos w-full  h:32 sm:h-96 sm:ml-48 relative top-[14%]   ">
+                <div class="DatosPersonales">
+                    <p class="textDatos text-black text-lg font-semibold font-family-Poppins mb-5 sm:text-2xl">Datos
+                        Personales</p>
+                </div>
+
+                <form class=" mt-8 max-w-md">
+                    <div class=" grid  ">
+                        <label for="nombreCompleto" class="block  font-family-Poppins"> <!--  -->
+                            <input type="text" id="nombreCompleto" name="nombreCompleto"
+                                placeholder="Nombres Completos " class=" w-44 sm:w-96 mb-4 h-8 sm:h-10
+                            rounded-lg border border-gray-900 shadow-sm px-3 py-2 text-black" />
+                        </label>
+                        <label for="direccion" class="block  font-family-Poppins"> <!--  -->
+                            <input type="text" id="direccion" name="direccion" placeholder="Dirección " class=" w-44 sm:w-96 mb-4 h-8 sm:h-10
+                            rounded-lg border border-gray-900 shadow-sm px-3 py-2 " />
+                        </label>
+                        <label for="telefono" class="block  font-family-Poppins"> <!--  -->
+                            <input type="number" id="telefono" name="telefono" placeholder="Teléfono " class=" w-44 sm:w-96 mb-4 h-8 sm:h-10
+                            rounded-lg border border-gray-900 shadow-sm px-3 py-2 " />
+                        </label>
+
+                    </div>
+
+                </form>
+
             </div>
-          
+        </section>
 
+        <div class="Framedecorativohc  ml-24 sm:ml-32 w-60  h-10 py-2 bg-blue-900 bg-opacity-80 rounded-3xl relative flex justify-center items-center
+        sm:w-5/6  sm:h-12 mb-4">
+            <span class="text-white sm:text-xl font-family-Poppins">Datos de Nacimiento</span>
+        </div>
+        <div class="FechaDeNacimiento w-56 h-6 text-center  text-black  font-family-Poppinsleading text-sm sm:w-80  sm:ml-36
+            font-semibold sm:text-lg sm:mb-7 mb-5 ">Fecha de Nacimiento</div>
 
+        <section class="GroupCumple h-84 sm:left-[10%] relative ">
+            <div class="flex flex-col sm:flex-row items-centersm:px-20">
+                <!-- Espacio para que escriba su fecha de cumpleaños -->
+                <form class="sm:px-20 ">
+                    <div class=" grid  ">
+                        <label for="fechaNacimiento" class="block px-8 "> <!--  -->
+                            <input type="date" id="fechaNacimiento" name="fechaNacimiento" class=" w-44 sm:w-96 mb-4 h-8 sm:h-10 
+                            rounded-lg border border-gray-900 shadow-sm px-3 py-2 text-black" />
+                        </label>
+                    </div>
+                </form>
+
+                <!-- Espacio para mostrar la edad del paciente -->
+                <div
+                    class="EdadDelPaciente w-60 h-6  text-black text-left text-base font-medium font-family-Poppins leading-tight mt-3  px-8  ">
+                    Edad del paciente:
+                </div>
+                <div
+                    class="EdadCalculada w-60 h-6  text-black text-left text-base font-normal font-family-Poppins leading-tight mt-3 sm:ml-3  px-8">
+                    x dias y mese z horas
+                </div>
+            </div>
 
         </section>
+        <!-- Mostramos una linea divisoria de seccií-->
+        <div class="LineaDivisoria w-full h-30 bg-gray-900  "></div>
+        <!-- Mostramos el siguiente bloque de información -->
+        <div class="LugNacimiento w-56 h-6 text-center  text-black  font-family-Poppinsleading text-sm sm:w-80  sm:ml-36
+            font-semibold sm:text-lg sm:mb- mt-4">Lugar de Nacimiento</div>
+        <section class="GroupLugNacimiento h-84 sm:left-[10%] relative sm:pt-0 ">
+            <div class="flex  flex-col px-12  sm:px-0 sm:flex-row items-centersm:px-20 sm:pt-0">
+                <!-- Espacio para que escriba su fecha de cumpleaños -->
+                <form class="sm:px-20 w-52  sm:w-96 h-16 pt-3 sm:pt-0">
+                    <div class=" grid  ">
+                        <select class="block w-full mt-2">
+                            <option>Selecciona el país </option>
+                            <option>Ecuador</option>
+                            <option>Colombia</option>
+                            <option>Mexico</option>
+                        </select>
+                    </div>
+
+                </form>
+                <form class="sm:px-20 w-52  sm:w-96 h-16 pt-3 sm:pt-0">
+                    <div class=" grid  ">
+                        <select class="block w-full mt-2">
+                            <option>Selecciona la ciudad </option>
+                            <option>Cuenca </option>
+                            <option>Ambato</option>
+                        </select>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+    <!-- APARTADO DE TABLA CON HIJOS RGISTRADOS-->
+
+    <div class="FrameHijos w-full h-96 relative bg-blue-900 bg-opacity-90 rounded-3xl">
+        <div class="flex items-center justify-center mb-5">
+            <a class="font-semibold font-family-Poppins text-white text-2xl">HIJOS REGISTRADOS</a>
+        </div>
+        <section class="flex items-center justify-center text-xs sm:text-lg ">
+            <div class="FrameTabla bg-white rounded-lg shadow-md w-1/3">
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg">Type</th>
+                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg">Where</th>
+                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg ">Description</th>
+                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg ">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">1</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Cy Ganderton</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Quality Control Specialist</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Blue</td>
+                        </tr>
+                        <tr>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">2</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Hart Hagerty</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Desktop Support Technician</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Purple</td>
+                        </tr>
+                        <tr>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">3</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Brice Swyre</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Tax Accountant</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Red</td>
+                        </tr>
+                        <!-- Filas vacías -->
+                        <tr>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                        </tr>
+                        <tr>
+                            <td  class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                        </tr>
+                        <tr>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
     </div>
 
 
-
 </body>
+
+
 
 </html>
