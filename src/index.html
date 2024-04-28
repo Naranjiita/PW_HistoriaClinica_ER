@@ -9,10 +9,41 @@
 </head>
 
 <body>
-    <div class="bg-blue-500 text-white p-4 rounded-md shadow-md">
-        Esto es un cuadro con fondo azul, texto blanco, padding y esquinas redondeadas.
-      </div>
-      
+    <div class="Framecabecera w-full h-20 bg-white shadow-lg relative">
+        <div class="GroupLogoinicio flex items-center pt-5">
+            <img class="ImagLogo w-10 h-10" src="../img/logotipoHospital.png" />
+            <span class="HospitalGeneral text-center text-black text-xl font-semibold font-Poppins ml-2 sm:text-2xl">
+                Hospital General
+            </span>
+        </div>
+    </div>
+
+
+    <!--SIGUIENTE FRAME que no se quiere sobreponer sobre el de arriba-->
+    <div class="FrameDeIngresoDeDatos w-full  py-14 items-center inline-flex bg-white ">
+        <section class="Grouptodoslosdatos w-full h-96 px-5 py-0 bg-slate-500  flex justify-center relative ">
+            <!-- Con este frame hacemos que sea responsive-->
+
+            <div class="Framedecorativohc w-80 h-10 py-2 bg-blue-900 bg-opacity-80 rounded-3xl absolute flex justify-center items-center
+              sm:w-5/6 sm:px-5 sm:h-12">
+                <span class="text-white sm:text-xl font-family-Poppins font-normal">Historial Clínico</span>
+            </div>
+            <div class="SubirFoto w-48 h-16  relative"> </div>
+                <img class="FrameFoto w-28 h-28 sm:w-56 sm:h-56 left-[10%] top-[60px]  rounded-3xl absolute" src="../img/frameFoto.png" />
+                <div class="btnSubirFoto w-28 h-8 bg-blue-950 bg-opacity-90 rounded-full shadow-sm left-[10%] top-[48%] absolute
+                    sm:top-[78%] sm:left-[15%] sm:w-28 sm:h-10 ">
+                    <div class="textoFoto left-[18%] top-[30%] absolute text-white text-xs font-normal font-family-Poppins">
+                    Adjuntar Foto
+                    </div>
+                </div>
+             
+            </div>
+    </div>
+
+    </section>
+    </div>
+
+
 
 </body>
 
