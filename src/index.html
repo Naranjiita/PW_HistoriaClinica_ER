@@ -31,30 +31,26 @@
         <section class="Group3DatosFoto w-full h-64 sm:h-96 px-44 sm:px-36 py-0  flex justify-start relative ">
 
             <div class="FrameDelaImagen w-full sm:w-60  ">
-                <img class="FrameFoto w-28 h-28 sm:w-56 sm:h-56 left-[10%] top-[60px]   sm:ml-24 rounded-3xl absolute "
+                <img id="fotoPerfil" class="FrameFoto w-28 h-28 sm:w-56 sm:h-56 left-[10%] top-[60px]   sm:ml-24 rounded-3xl absolute "
                     src="../img/frameFoto.png" />
-                <div class="btnSubirFoto w-28 h-8 bg-blue-950 bg-opacity-90 rounded-full shadow-sm left-[10%] top-[68%] absolute
+                <div class="w-28 h-8 bg-blue-950 bg-opacity-90 rounded-full shadow-sm left-[10%] top-[68%] absolute
                     sm:top-[78%] sm:ml-24 sm:w-28 sm:h-10 ">
-                    <button
-                        class="textoFoto left-[18%] top-[30%] absolute text-white text-xs font-light font-family-Poppins">
+                    <button id="btnCambiarFoto" class="textoFoto left-[18%] top-[30%] absolute text-white text-xs font-light font-family-Poppins">
                         Adjuntar Foto
                     </button>
                 </div>
             </div>
-            <div class="Framedatos w-full  h:32 sm:h-96 sm:ml-48 relative top-[14%]   ">
-                <div class="DatosPersonales">
-                    <p class="textDatos text-black text-lg font-semibold font-family-Poppins mb-5 sm:text-2xl">Datos
-                        Personales</p>
+            <div class="Framedatos w-full   sm:h-96 sm:ml-48 relative top-[10%] ">
+                <div class="DatosPersonales ">
+                    <p class="textDatos  mb-2 text-black text-lg font-semibold font-family-Poppins sm:text-2xl">Datos Personales</p>
                 </div>
-
-                <form class=" mt-8 max-w-md">
-                    <div class=" grid  ">
-                        <label for="nombreCompleto" class="block  font-family-Poppins"> <!--  -->
-                            <input type="text" id="nombreCompleto" name="nombreCompleto"
-                                placeholder="Nombres Completos " class=" w-44 sm:w-96 mb-4 h-8 sm:h-10
-                            rounded-lg border border-gray-900 shadow-sm px-3 py-2 text-black" />
+                <form class="  max-w-md "><!--******************************************************************************************-->
+                    <div class=" grid  py-3 ">
+                        <label for="nombreCompleto" class="block  font-family-Poppins  "> <!--  -->
+                            <input type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Nombres Completos " class=" w-44 sm:w-96 mb-4 h-8 sm:h-10 
+                            rounded-lg shadow-sm px-3 py-2 text-black border border-gray-900 " />
                         </label>
-                        <label for="direccion" class="block  font-family-Poppins"> <!--  -->
+                        <label for="direccion" class="block  font-family-Poppins  "> <!--  -->
                             <input type="text" id="direccion" name="direccion" placeholder="Dirección " class=" w-44 sm:w-96 mb-4 h-8 sm:h-10
                             rounded-lg border border-gray-900 shadow-sm px-3 py-2 " />
                         </label>
@@ -62,11 +58,12 @@
                             <input type="number" id="telefono" name="telefono" placeholder="Teléfono " class=" w-44 sm:w-96 mb-4 h-8 sm:h-10
                             rounded-lg border border-gray-900 shadow-sm px-3 py-2 " />
                         </label>
-
+                        <label for="cedula" class="block  font-family-Poppins"> <!--  -->
+                            <input type="number" id="cedula" name="cedula" placeholder="Cédula " class=" w-44 sm:mb-2  sm:w-96 h-8 sm:h-10
+                            rounded-lg border border-gray-900 shadow-sm px-3 py-2 " />
+                        </label>
                     </div>
-
                 </form>
-
             </div>
         </section>
 
@@ -77,13 +74,13 @@
         <div class="FechaDeNacimiento w-56 h-6 text-center  text-black  font-family-Poppinsleading text-sm sm:w-80  sm:ml-36
             font-semibold sm:text-lg sm:mb-7 mb-5 ">Fecha de Nacimiento</div>
 
-        <section class="GroupCumple h-84 sm:left-[10%] relative ">
+        <section class="GroupCumple h-84 sm:left-[10%] relative "><!--**********************************************************************-->
             <div class="flex flex-col sm:flex-row items-centersm:px-20">
                 <!-- Espacio para que escriba su fecha de cumpleaños -->
                 <form class="sm:px-20 ">
                     <div class=" grid  ">
-                        <label for="fechaNacimiento" class="block px-8 "> <!--  -->
-                            <input type="date" id="fechaNacimiento" name="fechaNacimiento" class=" w-44 sm:w-96 mb-4 h-8 sm:h-10 
+                        <label for="btnCambiarFechaN" class="block px-8 "> <!--  -->
+                            <input type="date" id="btnCambiarFechaN" name="btnCambiarFechaN" class=" componenteDatosNacimiento w-44 sm:w-96 mb-4 h-8 sm:h-10 
                             rounded-lg border border-gray-900 shadow-sm px-3 py-2 text-black" />
                         </label>
                     </div>
@@ -94,9 +91,8 @@
                     class="EdadDelPaciente w-60 h-6  text-black text-left text-base font-medium font-family-Poppins leading-tight mt-3  px-8  ">
                     Edad del paciente:
                 </div>
-                <div
-                    class="EdadCalculada w-60 h-6  text-black text-left text-base font-normal font-family-Poppins leading-tight mt-3 sm:ml-3  px-8 mb-3">
-                    x dias y mese z horas
+                <div id="edadCalculada" class=" w-60 h-6  text-black text-left text-base font-normal font-family-Poppins leading-tight mt-3 sm:ml-3  px-8 mb-3">
+                    x horas, x días, x meses, x años
                 </div>
             </div>
 
@@ -105,24 +101,23 @@
         <div class="LineaDivisoria w-full h-30 bg-gray-900  "></div>
         <!-- Mostramos el siguiente bloque de información -->
         <div class="LugNacimiento w-56 h-6 text-center  text-black  font-family-Poppinsleading text-sm sm:w-80  sm:ml-36
-            font-semibold sm:text-lg sm:mb- mt-6">Lugar de Nacimiento</div>
+            font-semibold sm:text-lg sm:mb- mt-6" >Lugar de Nacimiento</div>
         <section class="GroupLugNacimiento h-84 sm:left-[10%] relative sm:pt-0 ">
             <div class="flex  flex-col px-12  sm:px-0 sm:flex-row items-centersm:px-20 sm:pt-0">
                 <!-- Espacio para que escriba su fecha de cumpleaños -->
-                <form class="sm:px-20 w-52  sm:w-96 h-16 pt-3 sm:pt-0">
+                <form  class="sm:px-20 w-52  sm:w-96 h-16 pt-3 sm:pt-0 ">
                     <div class=" grid  ">
-                        <select name="pais" class="block w-full mt-2">
+                        <select id="comboBoxPais" name="pais" class="block w-full mt-2 componenteDatosNacimiento">
                             <option>Selecciona el país </option>
                             <option>Ecuador</option>
                             <option>Colombia</option>
-                            <option>Mexico</option>
+                            <option>México</option>
                         </select>
                     </div>
-
                 </form>
                 <form class="sm:px-20 w-52  sm:w-96 h-16 pt-3 sm:pt-0">
                     <div class=" grid  ">
-                        <select name="ciudad"  class="block w-full mt-2">
+                        <select id="comboBoxCiudad" name="ciudad"  class="block w-full mt-2 componenteDatosNacimiento">
                             <option>Selecciona la ciudad </option>
                             <option>Cuenca </option>
                             <option>Ambato</option>
@@ -147,23 +142,23 @@
         </div>
         <section class="flex items-center justify-center text-xs sm:text-lg flex-col sm:flex-row bg-gray-500">
             <div class="FrameTabla rounded-lg shadow-md w-1/3 bg-white mb-5 border border-black">
-                <table class="table-auto w-full mr-5 ">
+                <table id="tablaHijos" class="table-auto w-full mr-5 ">
                     <thead>
                         <tr class="bg-gray-500">
-                            <th class="sm:px-5  px-2 py-2 border-b-2 text-xs sm:text-lg">Type</th>
-                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg">Where</th>
-                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg ">Description</th>
-                            <th class="sm:px-5  px-2 py-2 border-b-2 text-xs sm:text-lg ">Amount</th>
+                            <th class="sm:px-5  px-2 py-2 border-b-2 text-xs sm:text-lg">N°</th>
+                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg">Nombres</th>
+                            <th class="sm:px-4  px-2 py-2 border-b-2 text-xs sm:text-lg ">Dirección</th>
+                            <th class="sm:px-5  px-2 py-2 border-b-2 text-xs sm:text-lg ">Telefono </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">1</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">3</td>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Cy Ganderton
                             </td>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Quality
                                 Control Specialist</td>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Blue</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">0984130215</td>
                         </tr>
                         <tr>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">2</td>
@@ -171,41 +166,28 @@
                             </td>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Desktop
                                 Support Technician</td>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Purple</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">0984130228</td>
                         </tr>
                         <tr>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">3</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">1</td>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Brice Swyre
                             </td>
                             <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Tax
                                 Accountant</td>
-                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">Red</td>
+                            <td class="border sm:px-4  px-2 py-2 text-center text-xs sm:text-lg font-light">0984130452</td>
                         </tr>
-                        <!-- Filas vacías -->
+                        <!-- Agregamos un footer -->
                         <tr>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                        </tr>
-                        <tr>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                        </tr>
-                        <tr>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                            <td class="border sm:px-4 px-2 py-4 text-xs sm:text-lg font-light"></td>
-                        </tr>
+                            <td id="totalHijos" class="px-2 py-4 bg-gray-50 font-light text-base"  colspan="3">Total de hijos: 3</td> <!-- Celda con el texto "Total de hijos: 3" -->
+                            <td class="py-4 bg-gray-50 text-right">
+                               
+                            </td>
                     </tbody>
                 </table>
             </div>
-            <div class="flex items-center w-60 ml-5 flex-row ">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-family-Poppins text-xs sm:text-base px-4 py-2 rounded-lg  ">Agregar Fila</button>
-                    <button class="ml-4 bg-red-500 hover:bg-red-600 text-white font-semibold font-family-Poppins text-xs sm:text-base px-4 py-2 rounded-lg">Eliminar Fila</button>
+            <div class="Botones flex items-center w-60 ml-5 flex-row ">
+                    <button id="btnAgregarFila" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-family-Poppins text-xs sm:text-base px-4 py-2 rounded-lg  ">Agregar Fila</button>
+                    <button id="btnEliminarFila" class="ml-4 bg-red-500 hover:bg-red-600 text-white font-semibold font-family-Poppins text-xs sm:text-base px-4 py-2 rounded-lg">Eliminar Fila</button>
             </div>
         </section>
 
@@ -220,7 +202,7 @@
         <!--El background de las cabeceras sera gris  y tendrá un footer -->
         <section class="flex items-center justify-center text-xs sm:text-lg flex-col sm:flex-row bg-gray-500 ">
             <div class="FrameTablaConsultas rounded-lg shadow-md w-1/3 bg-white mb-5 border border-gray-200">
-                <table class="table-auto w-full mr-5">
+                <table id="tablaConsultas" class="table-auto w-full mr-5">
                     <thead>
                         <tr class="">
                             <th class="sm:px-5  px-2 py-2 border-b-2 text-xs sm:text-lg ">Especialidad</th>
@@ -265,7 +247,7 @@
                         <tr>
                             <td class="px-2 py-4 bg-gray-50" colspan="3">Total de consultas: 5</td> <!-- Celda con el texto "Total de consultas: 3" -->
                             <td class="py-4 bg-gray-50 text-right">
-                                <button class="px-6  hover:bg-blue-700  font-bold font-family-Poppins text-xs sm:w-10 sm:h-10  py-2 rounded-lg">
+                                <button id="cont_RegistrosConsultas" class="px-6  hover:bg-blue-700  font-bold font-family-Poppins text-xs sm:w-10 sm:h-10  py-2 rounded-lg">
                                     <img src="../img/flecha-derecha.png" alt="Descripción de la imagen" class="w-5 h-5 mr-2" />
                                     
                                 </button> <!-- Botón "Avanzar" -->
@@ -277,7 +259,7 @@
             </div>
         </section>
     </section>
-
+    <script src="../js/gestionDatos.js"></script>
 </body>
 
 
